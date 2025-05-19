@@ -1,0 +1,76 @@
+.App {
+  margin: 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.header-top {
+  margin: 48px 24px 0px 24px;
+}
+
+.header-icon {
+  display: none;
+}
+
+.bg {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.bg p {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+
+  .header-container {
+      justify-content: space-between;
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+
+  .header-top {
+      margin: 48px 24px 0px 24px;
+  }
+
+  .header-icon {
+      display: block;
+      margin-top: 40px;
+  }
+
+  .bg {
+      margin-top: 0px;
+      height: 100vh;
+      position: fixed;
+      background-color: #222831;
+      z-index: 999;
+      width: 0px;
+      transition: width .5s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+  }
+  
+  .bg p {
+    display: none;
+  }
+
+  .bg.visible p{
+    display: block;
+    margin-right: 20px;
+  }
+  
+  .bg div {
+      align-self: flex-end;
+      margin-left: 23px;
+  }
+  
+}

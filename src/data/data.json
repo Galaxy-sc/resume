@@ -1,0 +1,39 @@
+{
+    "header": [
+        "درباره من",
+        "پروژه‌هام",
+        "ارتباط با من"
+    ],
+    "title-description": "فول استک دولوپر و پن‌تستر",
+    "first-button": "استخدامم کنید",
+    "second-button": "دانلود رزومم",
+    "about-me": "درباره من",
+    "about-me-description": "عاشق باگم، به نظرم باحال‌ترین قسمت کار ماست. برعکس تصورتون عاشق گل و گیاهم، شبا زود میخابم، حوصلم سر بره خودمو با شروع ی پروژه شخصی جدید بدبخت میکنم پس نزارید بیکار بمونم. هرچقدر ایده‌هاتون جدیدتر و خارج چارچوب‌تر من پایه ترم، اصلا بگید بریم ی برنامه پزشکی بنویسیم، ی برنامه برا اب و هوا من پایم. نصف کارایی که کردم اصلا تو تخصصم نبوده همون موقع گفتم چی لازمه یادش گرفتم..",
+    "project-title": "پروژه‌ها و دستاوردهای من",
+    "projects": {
+        "noroma": [
+            "نوروما",
+            "https://myket.ir/app/com.ravanshenasiapp",
+            "/prodact.png"
+        ],
+        "harvard": [
+            "علوم کامپیوتر هاروارد",
+            "https://cs50.harvard.edu/certificates/5ade2cac-6cf8-42f7-bd56-88d7b5a5c716",
+            "/harvard.png"
+        ]
+    },
+    "skill-title": "با تخصصام بیشتر آشنا شو",
+    "skills": [
+        [
+            "Figma", "HTML", "CSS", "JS", "Git & Github",
+            "Docker", "Flexbox", "React JS", "React Native"
+        ],
+        [
+            "WSTG v5", "MASTG", "Linux", "Network"
+        ]
+    ],
+    "contact-title": "باهام در تماس باش",
+    "phone": "09926513800",
+    "mail": "meysambalafkan1@gmail.com",
+    "user_id": "vsdev_team@"   
+}

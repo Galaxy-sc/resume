@@ -1,0 +1,513 @@
+html {
+  margin: 0;
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #222831;
+  margin: 0;
+}
+
+* {
+  color: #eee;
+  text-align: right;
+}
+
+.title-description {
+  font-size: 36px;
+}
+
+.first-page {
+  height: 100vh;
+}
+
+.mini-flash {
+  display: flex;
+  justify-self: center;
+}
+
+.first-button {
+  background-color: #00ADB5;
+  border-radius: 100px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.second-button {
+  background-color: #393E46;
+  text-decoration: none;
+}
+
+.download-icon {
+  margin-right: 10px;
+}
+
+.vector-one {
+  display: flex;
+  justify-self: center;
+  width: 50vw;
+  margin-top: 20px;
+}
+
+.second-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+.about-me-description {
+  font-size: 17px;
+  position: absolute;
+}
+
+.pageTwo-vector {
+  display: none;
+}
+
+.bg-second-page {
+  position: relative;
+  width: 300px;
+  margin: auto;
+}
+
+
+/* Start third-page */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  height: 250px;
+  width: 350px;
+  background-color: #393E46;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.project-card-image {
+  margin: auto;
+  margin-top: 20px;
+  width: 320px;
+  height: 150px;
+}
+
+.project-card-description {
+  margin: auto;
+  font-size: 20px;
+}
+/* End third-page */
+
+.fourth-page {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.fourth-page ul {
+  text-align: left;
+}
+
+.fourth-page li {
+  direction: ltr;
+  text-align: left;
+  font-size: 20px;
+  margin-top: 10px;
+  list-style-type: square;
+  color: #00ADB5;
+}
+
+.skill-container-ul {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+
+/* start page five */
+.fifth-page {
+  height: 50vh;
+}
+
+.fifth-page p {
+  display: flex;
+  justify-content: center;
+}
+
+.end-line {
+  background-color: rgba(238, 238, 238, .1);
+  width: 100%;
+  height: 2px;
+}
+
+
+.sixth-page {
+  display: flex;
+  width: 200px;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sixth-page div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sixth-page div {
+  background-color: #393E46;
+  width: 50px;
+  height: 50px;
+  border-radius: 60px;
+}
+
+.title-description, .first-button, .vector-one, .second-page p:nth-child(2) {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+
+.second-page p:nth-child(2) {
+  width: 300px;
+  /* position: absolute; */
+}
+
+.second-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.third-page-container {
+  height: 110vh;
+  width: 100vw;
+  background-image: url('./assets/bg-third-page.png');
+  background-position: center;
+}
+
+.skills-image {
+  display: none;
+}
+
+/* ---------------- Media Query -------------- */
+
+@media (min-width: 900px) {
+
+  .title-description, .first-button, .vector-one, .second-page, .skills-image, .skill-container-ul {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .title-description {
+    font-size: 3vw;
+  }
+
+  .button-container {
+    display: flex;
+  }
+
+  .first-page :nth-child(1) {
+    margin-right: 10%;
+  }
+
+  .first-button {
+    width: 250px;
+    margin-left: 40px;
+  }
+  .second-button {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .vector-one {
+    width: 30%;
+    height: 50%;
+    margin-top: 0px;
+    margin-right: 0;
+  }
+  
+  .first-page {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    margin-top: 100px;
+  }
+
+  .Cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+    flex-wrap: wrap;
+    text-decoration: none;
+  }
+
+  .second-page {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .bg-second-page {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .about-me-description {
+    font-size: 20px;
+  }
+
+  .pageTwo-vector {
+    display: block;
+    width: 50vh;
+    height: 50vh;
+    display: flex;
+    align-self: center;
+  }
+
+
+  .second-page-container {
+    display: block;
+  }
+
+  .bg-third-page {
+    position: relative;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .third-page-container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./assets/bg-third-page.png');
+    background-position: center;
+  }
+
+  .fourth-page {
+    height: 100vh;
+  }
+
+  .skills-image {
+    display: block;
+    position: absolute;
+  }
+
+  .skill-container-ul {
+    justify-content: end;
+  }
+
+  .fifth-page {
+    height: 80vh;
+  }
+
+  .fifth-page p:nth-child(1) {
+    display: flex;
+    justify-content: start;
+  }
+
+  .fifth-page p:nth-child(3), .fifth-page p:nth-child(4), .fifth-page p:nth-child(5) {
+    justify-content: end;
+    margin-left: 10%;
+    font-size: 20px;
+  }  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------FireWork----------------------------- */
+
+@keyframes firework {
+  0% { transform: translate(var(--x), var(--initialY)); width: var(--initialSize); opacity: 1; }
+  50% { width: 0.5vmin; opacity: 1; }
+  100% { width: var(--finalSize); opacity: 0; }
+}
+
+/* @keyframes fireworkPseudo {
+  0% { transform: translate(-50%, -50%); width: var(--initialSize); opacity: 1; }
+  50% { width: 0.5vmin; opacity: 1; }
+  100% { width: var(--finalSize); opacity: 0; }
+}
+ */
+.firework,
+.firework::before,
+.firework::after
+{
+  --initialSize: 0.5vmin;
+  --finalSize: 45vmin;
+  --particleSize: 0.2vmin;
+  --color1: yellow;
+  --color2: khaki;
+  --color3: white;
+  --color4: lime;
+  --color5: gold;
+  --color6: mediumseagreen;
+  --y: -30vmin;
+  --x: -50%;
+  --initialY: 60vmin;
+  content: "";
+  animation: firework 2s infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, var(--y));
+  width: var(--initialSize);
+  aspect-ratio: 1;
+  background: 
+    /*
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 0%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 0%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 100%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 100%,
+    */
+    
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 50% 0%,
+    radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 50%,
+    radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 50% 100%,
+    radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 0% 50%,
+    
+    /* bottom right */
+    radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 80% 90%,
+    radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 95% 90%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 90% 70%,
+    radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 60%,
+    radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 55% 80%,
+    radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 70% 77%,
+    
+    /* bottom left */
+    radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 22% 90%,
+    radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 45% 90%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 70%,
+    radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 10% 60%,
+    radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 31% 80%,
+    radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 28% 77%,
+    radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 13% 72%,
+    
+    /* top left */
+    radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 80% 10%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 95% 14%,
+    radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 90% 23%,
+    radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 100% 43%,
+    radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 85% 27%,
+    radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 77% 37%,
+    radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 60% 7%,
+    
+    /* top right */
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 22% 14%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 45% 20%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 34%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 10% 29%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 31% 37%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 28% 7%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 13% 42%
+    ;
+  background-size: var(--initialSize) var(--initialSize);
+  background-repeat: no-repeat;
+}
+
+.firework::before {
+  --x: -50%;
+  --y: -50%;
+  --initialY: -50%;
+/*   transform: translate(-20vmin, -2vmin) rotate(40deg) scale(1.3) rotateY(40deg); */
+  transform: translate(-50%, -50%) rotate(40deg) scale(1.3) rotateY(40deg);
+/*   animation: fireworkPseudo 2s infinite; */
+}
+
+.firework::after {
+  --x: -50%;
+  --y: -50%;
+  --initialY: -50%;
+/*   transform: translate(44vmin, -50%) rotate(170deg) scale(1.15) rotateY(-30deg); */
+  transform: translate(-50%, -50%) rotate(170deg) scale(1.15) rotateY(-30deg);
+/*   animation: fireworkPseudo 2s infinite; */
+}
+
+.firework:nth-child(2) {
+  --x: 30vmin;
+}
+
+.firework:nth-child(2),
+.firework:nth-child(2)::before,
+.firework:nth-child(2)::after {
+  --color1: pink;
+  --color2: violet;
+  --color3: fuchsia;
+  --color4: orchid;
+  --color5: plum;
+  --color6: lavender;  
+  --finalSize: 40vmin;
+  left: 30%;
+  top: 60%;
+  animation-delay: -0.25s;
+}
+
+.firework:nth-child(3) {
+  --x: -30vmin;
+  --y: -50vmin;
+}
+
+.firework:nth-child(3),
+.firework:nth-child(3)::before,
+.firework:nth-child(3)::after {
+  --color1: cyan;
+  --color2: lightcyan;
+  --color3: lightblue;
+  --color4: PaleTurquoise;
+  --color5: SkyBlue;
+  --color6: lavender;
+  --finalSize: 35vmin;
+  left: 70%;
+  top: 60%;
+  animation-delay: -0.4s;
+}
+/* 
+@media (max-width: 768px) {
+
+  .firework:nth-child(1),
+  .firework:nth-child(1)::before,
+  .firework:nth-child(1)::after {
+    top: 10%;
+    overflow: hidden;
+  }
+
+  .firework:nth-child(2),
+  .firework:nth-child(2)::before,
+  .firework:nth-child(2)::after {
+    top: 10%;
+    overflow: hidden;
+  }
+
+  .firework:nth-child(3),
+  .firework:nth-child(3)::before,
+  .firework:nth-child(3)::after {
+    top: 10%;
+    overflow: hidden;
+  }
+} */
