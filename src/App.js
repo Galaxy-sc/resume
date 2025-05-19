@@ -127,7 +127,7 @@ function App() {
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
-                    <img src={value[2]} className="project-card-image" />
+                    <img src={process.env.PUBLIC_URL + value[2]} className="project-card-image" />
                     <p className="project-card-description">
                       {value[0]}
                     </p>
